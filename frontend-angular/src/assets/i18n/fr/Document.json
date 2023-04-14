@@ -1,0 +1,20 @@
+{
+    "Document": {
+        "title": "Gestion des Documents",
+        "add": "Ajouter un document obligatoire", 
+        "name": "Nom du document", 
+        "main":"Menu",
+        "description": "Description du document",
+        "content": "Contenu du document",
+        "list" : "Liste des documents",
+        "document": "Document",
+        "documents": "Documents",
+        "file": "Fichier",
+        "folder": "Dossier", 
+
+        "add_fo": "Insérer un dossier",
+        "visibility": "Visibilité",
+        "permission":"Permissions"
+
+    }
+}

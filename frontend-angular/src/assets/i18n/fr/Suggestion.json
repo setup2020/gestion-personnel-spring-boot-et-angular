@@ -1,0 +1,21 @@
+{
+    "Suggestion" : {
+        "title": "Gestion des suggestions",
+        "suggestion": "Suggestion",
+        "suggestions": "Suggestions",
+        "add": "Proposer une suggestion",
+        "my": "Mes Suggestions",
+        "archived": "Suggestions archivées", 
+        "valid": "Suggestions à valider", 
+        "deal_with": "Suggestions à traiter",
+        "name": "Nom de la suggestion",
+        "main":"Menu",
+        "reporter": "Rapporteur de la suggestion",
+        "owner" : "Responsable de la suggestion",
+        "deadline": "Date limite de traitement de la Suggestion",
+        "desciprtion" : "Description de la suggestion",
+        "benefit": "Liste des avantages",
+        "damage": "Liste des inconvénients"
+    
+       }
+}

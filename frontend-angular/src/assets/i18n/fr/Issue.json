@@ -1,0 +1,21 @@
+{
+    "Issue":{
+        "title": "Gestion des enjeux",
+        "add": "Déterminer un enjeu",
+        "list_int": "Liste des enjeux internes",
+        "list_ext": "Liste des enjeux externes",
+        "monitoring": "Surveillance des enjeux",
+        "category": "Catégorie de l'enjeu",
+        "name": "Nom de l'enjeu", 
+        "main":"Menu",
+        "description": "Description de l'enjeu",
+        "factor_pos": "Facteurs positifs",
+        "factor_neg": "Facteurs negatifs",
+        "condition":"Conditions de l'enjeu", 
+        "opportunity": "Opportuntés de l'enjeu",
+        "issue": "Enjeu",
+        "issues": "Enjeux"
+
+
+    }
+}

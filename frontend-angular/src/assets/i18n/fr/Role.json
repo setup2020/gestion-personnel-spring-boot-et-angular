@@ -1,0 +1,14 @@
+{
+
+    "Role": {
+        "title": "Gestion des Rôles",
+        "Employee": "EMPLOYÉ",
+        "supervisor": "CHEF D'UNITÉ",
+        "manager": "MANAGER",
+        "top": "TOP MANAGER",
+        "role" : "Rôle",
+        "main":"Menu",
+        "roles" : "Rôles",
+        "select_role": "Sélectionner le rôle"
+    }
+}

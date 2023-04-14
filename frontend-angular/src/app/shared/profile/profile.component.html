@@ -1,0 +1,251 @@
+<div class="page-header">
+  <h1 class="page-title">Edit Profile</h1>
+  <div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)">Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Edit Profile</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-8">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Edit Profile</h3>
+      </div>
+      <form [formGroup]="editForm">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label for="exampleInputname">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputname"
+                  formControlName="firstname"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label for="exampleInputname1">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputname1"
+                  placeholder="Enter Last Name"
+                  formControlName="lastname"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Email address"
+                  formControlName="email"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label for="exampleInputnumber">Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputnumber"
+                  placeholder="Contact number"
+                  formControlName="phone"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label>Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="address"
+                  formControlName="address"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="card-footer text-end">
+        <a href="javascript:void(0)" class="btn btn-success my-1">Save</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Edit Password</div>
+      </div>
+      <div class="card-body">
+        <div class="text-center chat-image mb-5">
+          <div class="avatar avatar-xxl chat-profile mb-3 brround">
+            <a class="" href="profile.html"
+              ><img
+                alt="avatar"
+                src="../assets/images/users/21.jpg"
+                class="brround"
+            /></a>
+          </div>
+          <div class="main-chat-msg-name">
+            <a href="profile.html">
+              <h5 class="mb-1 text-dark fw-semibold">
+                {{ user?.firstname }} {{ user?.lastname }}
+              </h5>
+            </a>
+            <p class="text-muted mt-0 mb-0 pt-0 fs-13">Web Designer</p>
+          </div>
+        </div>
+        <form [formGroup]="editPaswordForm">
+          <div class="form-group">
+            <label class="form-label">Current Password</label>
+            <div
+              class="wrap-input100 validate-input input-group"
+              id="Password-toggle"
+            >
+              <a
+                href="javascript:void(0)"
+                class="input-group-text bg-white text-muted"
+              >
+                <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
+              </a>
+              <input
+                class="input100 form-control"
+                type="password"
+                placeholder="Current Password"
+                formControlName="currentPassword"
+              />
+            </div>
+            <!-- <input type="password" class="form-control" value="password"> -->
+          </div>
+          <div
+            *ngIf="submitted && f.currentPassword.errors"
+            class="text-danger"
+          >
+            <div *ngIf="f.currentPassword.errors.required">
+              Current Password is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">New Password</label>
+            <div
+              class="wrap-input100 validate-input input-group"
+              id="Password-toggle1"
+            >
+              <a
+                href="javascript:void(0)"
+                class="input-group-text bg-white text-muted"
+              >
+                <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
+              </a>
+              <input
+                class="input100 form-control"
+                type="password"
+                placeholder="New Password"
+                formControlName="password"
+              />
+            </div>
+
+            <!-- <input type="password" class="form-control" value="password"> -->
+          </div>
+
+          <div *ngIf="submitted && f.password.errors" class="text-danger">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+            <div *ngIf="f.password.errors.minlength">
+              Password must be at least 6 characters
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Confirm Password</label>
+            <div
+              class="wrap-input100 validate-input input-group"
+              id="Password-toggle2"
+            >
+              <a
+                href="javascript:void(0)"
+                class="input-group-text bg-white text-muted"
+              >
+                <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
+              </a>
+              <input
+                class="input100 form-control"
+                type="password"
+                placeholder="Confirm Password"
+                formControlName="confirmPassword"
+              />
+            </div>
+
+            <!-- <input type="password" class="form-control" value="password"> -->
+          </div>
+          <div
+            *ngIf="submitted && f.confirmPassword.errors"
+            class="text-danger"
+          >
+            <div *ngIf="f.confirmPassword.errors.required">
+              Confirm Password is required
+            </div>
+          </div>
+
+          <div class="card-footer text-end">
+            <a
+              href="javascript:void(0)"
+              (click)="savePwd()"
+              class="btn btn-primary"
+              >Update</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="form-group">
+  <label>Password</label>
+  <input
+    type="password"
+    formControlName="password"
+    class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+  />
+  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+    <div *ngIf="f.password.errors.required">Password is required</div>
+    <div *ngIf="f.password.errors.minlength">
+      Password must be at least 6 characters
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label>Confirm Password</label>
+  <input
+    type="password"
+    formControlName="confirmPassword"
+    class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
+  />
+  <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+    <div *ngIf="f.confirmPassword.errors.required">
+      Confirm Password is required
+    </div>
+    <div *ngIf="f.confirmPassword.errors.mustMatch">
+      Password and confirm not match
+    </div>
+  </div>
+</div> -->
+</div>
+<ngx-loading [show]="loading"></ngx-loading>

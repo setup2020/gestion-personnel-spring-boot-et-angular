@@ -1,0 +1,324 @@
+<div class="page-header mt-5">
+  <h1 class="page-title">organisations</h1>
+  <div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Organisations</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card card-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Nouvelle organisation
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse "
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <form [formGroup]="editForm">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="nameLevel">Nom </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nom"
+                      formControlName="libelle"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="nameLevel">Nom en anglais</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nom en anglais"
+                      formControlName="libelleEn"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="nameLevel">type organisation</label>
+                    <select class="form-select" formControlName="type">
+                      <option selected>Seleted type organisation</option>
+                      <option [ngValue]="t" *ngFor="let t of type">
+                        {{ t.libelle }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    *ngIf="editForm!.value?.type?.hasParent"
+                  >
+                    <label for="nameLevel">parent organisation</label>
+                    <select class="form-select" formControlName="parent">
+                      <option selected>Seleted parent organisation</option>
+                      <option [ngValue]="t" *ngFor="let t of res">
+                        {{ t.libelle }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <!--div class="col-md-6" *ngIf="editForm!.value!.type?.hasChild">
+                          <label for="nameLevel">List children organisations</label>
+                          <ng-select
+                          [items]="res"
+                          [bindLabel]="'libelle'"
+                          
+                          formControlName="children"
+                          [multiple]="true"
+                        ></ng-select>
+                        </div-->
+
+                        <div class="col-12">
+                          <button
+                          class="btn btn-primary btn-sm float-end mt-5"
+                          (click)="save()"
+                        >
+                          save
+                        </button>
+                        </div>
+                </div>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Liste des organisations
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3 my-2" *ngFor="let r of res">
+                  <div class="card card-body bg-primary-transparent text-dark" (click)="go(r)" style="cursor: pointer">
+                    {{ r.libelle }}
+                    <div class="text-muted text-italic">
+                      ({{ r.typeOrganisation.libelle }})
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row card card-body">
+  <div class="col-12">
+    <div class="form-group">
+      <label>Entrez l'id de l'utilisateur</label>
+      <input type="text" class="form-control" [(ngModel)]="searchInput" />
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-default" (click)="search()">Search</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2" *ngFor="let r of postes">
+    <div
+      class="card p-5"
+      (click)="getPost(r)"
+      [ngClass]="posteSelect?.id === r.id ? 'border-success border' : ''"
+    >
+      {{ r.posteDTO?.libelle }} ({{ r.userDTO?.lastName }})
+      {{ r.posteDTO?.responsable ? "Chef" : "" }}
+      <div class="text-muted text-italic">
+        ({{ r.posteDTO?.organisationDTO?.libelle }})
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="posteSelect">
+  <div class="card">
+    <div class="card-header">
+      <h5>Creer une tache</h5>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2">
+          <div class="card p-5">
+            <label class="text-muted text-italic" for="ZZ">
+              <input
+                id="ZZ"
+                type="radio"
+                class="form-check"
+                value="me"
+                name="user"
+                [(ngModel)]="inputChamp"
+              />Moi meme</label
+            >
+          </div>
+        </div>
+
+        <div class="col-2" *ngFor="let r of sousOrganisations">
+          <div class="card p-5">
+            <div>
+              <input
+                type="radio"
+                class="form-check"
+                [value]="r.id"
+                name="user"
+                id="{{ r.id }}"
+                [(ngModel)]="inputChamp"
+              />
+              {{ r.libelle }}
+            </div>
+
+            <label class="text-muted text-italic" for="{{ r.id }}"
+              >({{ r.typeOrganisationDTO?.libelle }})</label
+            >
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label>Entrer le nom de tache</label>
+            <input
+              type="text"
+              class="form-control"
+              [(ngModel)]="task"
+              name="task"
+            />
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-default" (click)="createTask()">
+            Create Task
+          </button>
+        </div>
+        <ng-container *ngIf="posteSelect.posteDTO?.responsable">
+          <br />
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><h5>Liste des taches</h5></div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <table class="table">
+            <thead>
+              <th scope="col">Nom</th>
+              <th scope="col">Source</th>
+              <th scope="col">Status</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let l of tasks">
+                <td>{{ l.name }}</td>
+                <td>
+                  <ng-container
+                    *ngIf="
+                      l.pointA !== posteSelect.posteDTO!.organisationDTO!.id &&
+                        l.pointB === posteSelect.posteDTO!.organisationDTO!.id;
+                      else temp
+                    "
+                  >
+                    <span class="badge bg-info">SUPERIEUR</span>
+                  </ng-container>
+                  <ng-template #temp>
+                    <span class="badge bg-danger">MOI</span>
+                  </ng-template>
+                </td>
+                <td>{{ l.status }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="tasksValidation.length">
+    <div class="card-header">
+      <h5>Liste des taches a valider (creer pour par mes sous-organisation)</h5>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <table class="table">
+            <thead>
+              <th scope="col">Nom</th>
+
+              <th scope="col">Status</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let l of tasksValidation">
+                <td>{{ l.name }}</td>
+
+                <td>{{ l.status }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="tasksSousOrganisation.length">
+    <div class="card-header">
+      <h5>Liste des taches attribués a mes sous-organisations</h5>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <table class="table">
+            <thead>
+              <th scope="col">Nom</th>
+
+              <th scope="col">Status</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let l of tasksSousOrganisation">
+                <td>{{ l.name }}</td>
+
+                <td>{{ l.status }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

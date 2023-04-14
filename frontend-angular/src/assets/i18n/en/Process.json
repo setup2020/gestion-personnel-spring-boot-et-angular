@@ -1,0 +1,36 @@
+{
+    
+    "Process": {
+        "title": "Process Management", 
+        "list": "Processes List",
+        "add": "Add a Process", 
+        "information": "General Information", 
+        "permission": "Permissions", 
+        "type": "Process typ",
+        "process": "Process",
+        "processes" : "Processes",
+        "category": "Process category",
+        "group": "Process group",
+        "name": "Process name",
+        "main":"Menu",
+        "department": "Process owner department", 
+        "owner": "Process owner", 
+        "version": "Process version", 
+        "ref": "Process reference",
+        "signed": "Signatory",
+        "date_valid": "Valid from:",
+        "goal": "Process goals",
+        "description": "Process description", 
+        "participant": "Process Participants list",
+        "animator": "Process animators list",
+        "trigger": "Process triggers list",
+        "parent": "Process parent", 
+        "access_denied": "access denied", 
+        "method":"Process Method", 
+        "management": "Management process",
+        "operation": "Operation process",
+        "support":"Support process"
+
+    }
+
+}

@@ -1,0 +1,19 @@
+{
+    "Claim" : {
+        "title": "Claim Management",
+        "claim": "Claim",
+        "claims": "Claims",
+        "add": "Add a Claim",
+        "my": "My Claims",
+        "archived": "Archived Claims", 
+        "valid": "Claim to validate", 
+        "deal_with": "Claim to deal with",
+        "name": "Claim name",
+        "main":"Menu",
+        "reporter": "Claim reporter",
+        "owner" : "Claim Owner",
+        "deadline": "Claim deadline",
+        "desciprtion" : "Claim description"    
+    
+       }
+}

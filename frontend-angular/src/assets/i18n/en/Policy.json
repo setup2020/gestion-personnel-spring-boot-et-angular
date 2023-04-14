@@ -1,0 +1,21 @@
+{
+
+
+    "Policy": {
+        "title": "Policy Management",
+        "policy": "Policy",
+        "type" : "Type",
+        "select_type": "Select the type",
+        "sous_type" : "Sub-Type", 
+        "select_stype": "Select the sub-type", 
+        "name": "Political axis name",
+        "main":"Menu",
+        "description": "Political axis description",
+        "select_policy": "Select the political axis",
+        "add": "Define a political axis",
+        "list": "Political axis list",
+        "monitoring": "Politcal axis monitoring"
+
+         }
+
+}

@@ -1,0 +1,38 @@
+{
+
+    "Kpi": {
+        "title": "Gestion des KPIs", 
+        "main":"Menu",
+        "name" : "Nom du KPI",
+        "name_required": "Nom du KPI est exigé",
+        "name_Required_3":"Nom du KPI doit avoir au moins de 3 caractères",
+        "unity": "Unité du KPI",
+        "unity_required": "L'unité du KPI est exigé",
+        "select_unity":"Sélectionner l'unité",
+        "target" : "Cible du KPI",
+        "target_required" : "La Cible du KPI est exigée",
+        "value": "Valeur du KPI",
+        "value_required":"Valeur du KPI  is exigée",
+        "description" : "Description du KPI", 
+        "description_required": "La description du KPI est exigée",
+        "description_required_15": "La description du KPI doit avoir au moins 15 caractères",
+        "list" : "Liste des KPIs", 
+        "kpi": "KPI",
+        "kpis": "KPIs",
+        "indicator" : "Indicateurs clés de performance",
+        "number": "Nombre",
+        "percent": "Pourcentage",
+        "budget": "Budget",
+        "time": "Temps",
+        "select_kpi":"Sélectionner le KPI", 
+
+
+        "add": "Determiner un KPI",
+        "list_proc": "Liste des KPIs de type Processus", 
+        "list_obj": "Liste des KPIs de type Objectif", 
+        "monitoring": "Surveillance des KPIs",
+        "type": "Type de KPI", 
+        "type_required": "Le type de KPI est exigé"
+    }
+
+}

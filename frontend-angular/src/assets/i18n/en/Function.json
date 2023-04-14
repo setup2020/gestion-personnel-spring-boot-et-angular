@@ -1,0 +1,11 @@
+{
+    "Function": {
+        "title": "Functions Management",
+        "list": "Functions List",
+        "name": "Function name",
+        "description": "Function description",
+        "function":"Function",
+        "functions": "Functions",
+        "main":"Menu"
+    }
+}

@@ -1,0 +1,13 @@
+{
+   
+    "Output": {
+        "title": "Gestion des éléments de sortie",
+        "add": "Ajouter un élément de sortie",
+        "name": "Nomd de l'élément de sortie",
+        "main":"Menu",
+        "description": "Description de l'élément de sortie",
+        "list": "Liste des éléments de sortie",
+        "output": "Élément de sortie",
+        "outputs": "Éléments de sortie"
+    }
+}

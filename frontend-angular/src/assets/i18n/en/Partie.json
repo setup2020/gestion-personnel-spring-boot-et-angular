@@ -1,0 +1,29 @@
+{
+    "Partie":{
+        "title": "Interested Parties Management",
+        "add":"Identify a interested partie",
+        "list_partner":"Partner List",
+        "list_shareholder":"Shareholder List",
+        "list_supplier":"Supplier List",
+        "list_customer": "Customer List",
+        "monitoring":"Interested Paties Monitoring",
+        "category":"Interested Parties Category",
+        "select_category":"Select the category",
+        "sub_category": "Sub category",
+        "select_sub_category":"Select sub category",
+        "sub_category_typ": "Type of sub category",
+        "select_typ_sub_category": "Select type of sub category",
+        "name":"Interested partie name",
+        "main":"Menu",
+        "description":"Interested partie description",
+        "influence": "Interested partie influence", 
+        "localisation": "Interested partie localisation",
+        "spoc_name":"Single Point of Contac name",
+        "spoc_email":"Single Point of Contact email",
+        "spoc_phone":"Single Point of Contact phone",
+        "need": "Interested Partie needs",
+        "partie": "Interested Partie",
+        "parties": "Interested Parties"
+    
+       }
+}

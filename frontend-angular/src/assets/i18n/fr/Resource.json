@@ -1,0 +1,15 @@
+{
+
+    "Resource": {
+        "title": "Gestion des Ressources",
+        "add" : "Ajouter une ressource",
+        "name": "Nom de la ressource",
+        "main":"Menu",
+        "description": "Description de la ressource",
+        "resource":"Ressource",
+        "resources":"Ressources",
+        "list": "Liste des Ressources"
+        
+    }
+
+}

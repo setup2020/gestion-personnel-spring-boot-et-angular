@@ -1,0 +1,20 @@
+{
+    "Document":{
+        "title": "Document Management",
+        "add": "Add a Mandatory Document", 
+        "name": "Document name", 
+        "description": "Document description",
+        "content": "Document Content",
+        "list": "Docuements List",
+        "document": "Document",
+        "file": "File",
+        "folder": "Folder",
+        "documents": "Documents",
+        "main":"Menu",
+
+        "add_fo": "Add a new folder",
+        "visibility": "Visibility",
+        "permission":"Permissions"
+
+    }
+}

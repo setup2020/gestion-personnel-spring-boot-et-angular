@@ -1,0 +1,13 @@
+{
+    "Objective": {
+        "title": "Gestion des Objectifs",
+        "add": "Fixer un Objectif", 
+        "list": "Liste des objectifs",
+        "monitoring": "Surveillance des objectifs",
+        "name": "Nom de l'objectif",
+        "main":"Menu",
+        "desciprtion": "Description de l'objectif"
+
+
+     }
+}

@@ -1,0 +1,60 @@
+<ng-container *ngIf="status">
+  <span
+    *ngIf="status === STATE.OPENED"
+    class="badge bg-default rounded-pill fw-bold"
+  >
+    {{ status }}
+  </span>
+
+  <span
+    *ngIf="status === STATE.TREATED"
+    class="badge bg-success rounded-pill fw-bold"
+  >
+    {{ status }}
+  </span>
+
+  <span
+    *ngIf="status === STATE.TO_DO"
+    class="badge bg-primary rounded-pill fw-bold"
+  >
+    {{ status }}
+  </span>
+
+  <span
+    *ngIf="status === STATE.PENDING"
+    class="badge bg-warning rounded-pill fw-bold"
+  >
+    {{ status }}
+  </span>
+
+  <span
+    *ngIf="status === STATE.IN_PROGRESS"
+    class="badge bg-info rounded-pill fw-bold"
+  >
+    {{ status }}
+  </span>
+
+  <span
+    *ngIf="
+      status === STATE.EXIST ||
+      status === STATE.ARCHIVED ||
+      status === STATE.REJECTED ||
+      status === STATE.REFUSED ||
+      status === STATE.CLOSED ||
+      status === STATE.DELETED ||
+      status === STATE.SUSPENDED
+    "
+    class="badge bg-danger rounded-pill fw-bold"
+  >
+    {{ status }}
+  </span>
+</ng-container>
+
+<ng-container *ngIf="impact">
+  <span
+    *ngIf="impact === IMPACT.ARRET_TOTAL"
+    class="badge bg-danger rounded-pill fw-bold"
+  >
+    ARRET TOTAL
+  </span>
+</ng-container>

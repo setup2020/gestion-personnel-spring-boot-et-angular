@@ -1,0 +1,13 @@
+{
+
+    "Department": {
+        "title": "Gestion des Départements",
+        "list": "Liste des Départements",
+        "name": "Nom du Département ",
+        "main":"Menu",
+        "description": "Description du Département",
+        "select_dep": "Sélectionner le département", 
+        "department":"Département",
+        "departments":"Départements"
+    }
+}

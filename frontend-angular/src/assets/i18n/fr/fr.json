@@ -1,0 +1,102 @@
+{
+    "app": "IMV PLATEFORM",
+    "HOME": {
+        "TITLE": "Bonjour Angular avec ngx-translate !",
+        "SELECT": "Changer la langue"
+    },
+    "input": {
+        "title": "Gestion des éléments d'éntrée",
+        "Documents inputs": "Gestion des éléments d'éntrée",
+        "Name": "Nom de l'élément d'entrée",
+        "Description": "Description"
+    },
+    "outputs": {
+        "title": "Gestion des éléments de sortie",
+        "Documents outputs": "Gestion des éléments de sortie",
+        "Name": "Nom de l'élément de sortie",
+        "Description": "Description"
+    },
+    "resources": {
+        "title": "Gestion des Ressources",
+        "Name": "Nom de la norme",
+        "Description": "Description"
+    },
+    "standards": {
+        "title": "NORMES",
+        "Standards": "Liste des normes",
+        "Name": "Nom de la norme",
+        "Description": "Description"
+    },
+    "performance": {
+        "title": "Gestion des KPI",
+        "List Performances": "Gestion des KPI",
+        "Name": "Nom de KPI",
+        "Unity": "Unité de KPI",
+        "NUMBER": "Nombre",
+        "PERCENT": "Pourcentage",
+        "COUT": "Budget",
+        "TEMPS": "Date"
+    },
+    "management_users": {
+        "title": "GESTIONS DES UTILISATEURS"
+    },
+    "roles": {
+        "title": "Roles",
+        "EMPLOYEE": "EMPLOYÉ",
+        "SUPERVISOR": "CHEF D'UNITÉ",
+        "MANAGER": "MANAGER",
+        "TOP MANAGER": "TOP MANAGER"
+    },
+    "privileges": {
+        "title": "Gestion des Privilèges",
+        "Role": "Role",
+        "Privileges List": "Liste des Privilèges"
+    },
+    "departments": {
+        "title": "Gestion des Départements",
+        "Departement List": "Liste des équipes",
+        "Name": "nom de l'équipe",
+        "Description": "Description"
+    },
+    "teams": {
+        "title": "Gestion des Equipes",
+        "Teams List": "Liste des équipes",
+        "Name": "nom de l'équipe",
+        "Description": "Description"
+    },
+    "users": {
+        "title": "Utilisateurs",
+        "list": "Gestion des utilisateurs"
+    },
+    "supervisors": {
+        "title": "Gestion des superviseurs",
+        "Supervisors List": "Liste des superviseurs",
+        "Role": "Rôle",
+        "Department": "Nom du département",
+        "Name": "Nom du superviseur",
+        "Description": "Description"
+    },
+    "procedures": {
+        "title": "Liste des Procedures",
+        "management_procedures": "Gestion des Procedures"
+    },
+    "axis_policies": {
+        "title": "Gestion de la Politique",
+        "Name": "Nom de l'axe politque",
+        "Type": "Type d'exigences",
+        "Description": "Description"
+    },
+    "Create User": {
+        "title": "Créer un Utilisateur",
+        "Last name": "Nom",
+        "First name": "Prénom",
+        "Phone": "Téléphone",
+        "Email": "Email",
+        "Adress": "Adresse",
+        "Role": "Rôle",
+        "NETWORK": "RÉSEAUX SOCIAUX",
+        "Skype ID": "Skype ID",
+        "Facebook": "Facebook",
+        "Linkedin": "Linkedin"
+    }
+}

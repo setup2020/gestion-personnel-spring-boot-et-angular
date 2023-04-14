@@ -1,0 +1,438 @@
+<div class="page-header mt-5">
+  <h1 class="page-title">New file post</h1>
+  <div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">New file post</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <form class="form-row" [formGroup]="editForm">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="name" class="form-label">name
+                <span class="text-danger">*</span></label>
+              <input type="text" [ngClass]="{ 'is-invalid': submitted && f.nom.errors }" class="form-control" id="name"
+                formControlName="nom" />
+            </div>
+            <div *ngIf="submitted && f.nom.errors" class="invalid-feedback">
+              <div *ngIf="f.nom.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="description">Description<span class="text-danger">*</span></label>
+            <textarea [ngClass]="{ 'is-invalid': submitted && f.description.errors }" id="description"
+              class="form-control" formControlName="description" rows="3">
+                      </textarea>
+            <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+              <div *ngIf="f.description.errors.required">
+                champ requis
+              </div>
+              <div *ngIf="f.description.errors.minlength">
+                description must be at least 15 characters
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="mission">Mission<span class="text-danger">*</span></label>
+            <textarea [ngClass]="{ 'is-invalid': submitted && f.mission.errors }" id="mission" class="form-control"
+              formControlName="mission" rows="3">
+                        </textarea>
+            <div *ngIf="submitted && f.mission.errors" class="invalid-feedback">
+              <div *ngIf="f.mission.errors.required">
+                champ requis
+              </div>
+              <div *ngIf="f.description.errors.minlength">
+                mission must be at least 15 characters
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="profil">profil<span class="text-danger">*</span></label>
+            <textarea [ngClass]="{ 'is-invalid': submitted && f.profil.errors }" id="profil" class="form-control"
+              formControlName="profil" rows="3">
+                        </textarea>
+            <div *ngIf="submitted && f.profil.errors" class="invalid-feedback">
+              <div *ngIf="f.profil.errors.required">
+                champ requis
+              </div>
+              <div *ngIf="f.description.errors.minlength">
+                profil must be at least 15 characters
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="connaissanceMarche" class="form-label">Connaissance du marché
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.connaissanceMarche.errors }"
+              class="form-control" id="connaissanceMarche" formControlName="connaissanceMarche" />
+            <div *ngIf="submitted && f.connaissanceMarche.errors" class="invalid-feedback">
+              <div *ngIf="f.connaissanceMarche.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="connaissanceMetier" class="form-label">Connaissance du metier
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.connaissanceMetier.errors }"
+              class="form-control" id="connaissanceMetier" formControlName="connaissanceMetier" />
+            <div *ngIf="submitted && f.connaissanceMetier.errors" class="invalid-feedback">
+              <div *ngIf="f.connaissanceMetier.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="connaissanceMilieu" class="form-label">Connaissance du milieu
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.connaissanceMilieu.errors }"
+              class="form-control" id="connaissanceMilieu" formControlName="connaissanceMilieu" />
+            <div *ngIf="submitted && f.connaissanceMilieu.errors" class="invalid-feedback">
+              <div *ngIf="f.connaissanceMilieu.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="connaissanceMethode" class="form-label">Connaissance du methode
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.connaissanceMethode.errors }"
+              class="form-control" id="connaissanceMethode" formControlName="connaissanceMethode" />
+            <div *ngIf="submitted && f.connaissanceMethode.errors" class="invalid-feedback">
+              <div *ngIf="f.connaissanceMethode.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-12 my-3">
+            <div class="d-flex flex-row-reverse p-3 border bg-default   bg-opacity-100  rounded-3">
+              <div><span class=" badge bg-primary">
+                {{ 
+                  editForm.value.connaissanceMethode+
+                  editForm.value.connaissanceMilieu+
+                  editForm.value.connaissanceMarche+
+                  editForm.value.connaissanceMarche
+                }}
+              </span></div>
+              <div>Connaissance générale</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="col-md-6">
+            <label for="experienceMarche" class="form-label">experience marche
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.experienceMarche.errors }"
+              class="form-control" id="experienceMarche" formControlName="experienceMarche" />
+            <div *ngIf="submitted && f.experienceMarche.errors" class="invalid-feedback">
+              <div *ngIf="f.experienceMarche.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="experienceMetier" class="form-label">experience metier
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.experienceMetier.errors }"
+              class="form-control" id="experienceMetier" formControlName="experienceMetier" />
+            <div *ngIf="submitted && f.experienceMetier.errors" class="invalid-feedback">
+              <div *ngIf="f.experienceMetier.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="experienceMilieu" class="form-label">experience du milieu
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.experienceMilieu.errors }"
+              class="form-control" id="experienceMilieu" formControlName="experienceMilieu" />
+            <div *ngIf="submitted && f.experienceMilieu.errors" class="invalid-feedback">
+              <div *ngIf="f.experienceMilieu.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="experienceMethode" class="form-label">experience methode
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.experienceMethode.errors }"
+              class="form-control" id="experienceMethode" formControlName="experienceMethode" />
+            <div *ngIf="submitted && f.experienceMethode.errors" class="invalid-feedback">
+              <div *ngIf="f.experienceMethode.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-12  my-3">
+            <div class="d-flex flex-row-reverse p-3 border bg-default   bg-opacity-100  rounded-3">
+              <div><span class=" badge bg-primary">
+
+                {{ 
+                  editForm.value.experienceMethode+
+                  editForm.value.experienceMilieu+
+                  editForm.value.experienceMetier+
+                  editForm.value.experienceMarche
+                }}
+              </span></div>
+              <div>Experience generale</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="col-md-4">
+            <label for="integration" class="form-label">integration
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.integration.errors }" class="form-control"
+              id="integration" formControlName="integration" />
+            <div *ngIf="submitted && f.experienceMethode.errors" class="invalid-feedback">
+              <div *ngIf="f.experienceMethode.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="courtoisie" class="form-label">courtoisie
+                <span class="text-danger">*</span></label>
+              <input type="number" [ngClass]="{ 'is-invalid': submitted && f.courtoisie.errors }" class="form-control"
+                id="courtoisie" formControlName="courtoisie" />
+            </div>
+            <div *ngIf="submitted && f.courtoisie.errors" class="invalid-feedback">
+              <div *ngIf="f.courtoisie.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="acculturation" class="form-label">acculturation
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.acculturation.errors }"
+              class="form-control" id="acculturation" formControlName="acculturation" />
+            <div *ngIf="submitted && f.acculturation.errors" class="invalid-feedback">
+              <div *ngIf="f.acculturation.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-12 my-3">
+            <div class="d-flex flex-row-reverse p-3 border bg-default   bg-opacity-100  rounded-3">
+              <div><span class=" badge bg-primary">
+                {{ 
+                  editForm.value.acculturation+
+                  editForm.value.courtoisie+
+                  editForm.value.integration}}
+              </span></div>
+              <div>Sociabilisation</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="col-md-6">
+            <label for="equipe" class="form-label">Capacité à travailler en equipe
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.equipe.errors }" class="form-control"
+              id="equipe" formControlName="equipe" />
+            <div *ngIf="submitted && f.equipe.errors" class="invalid-feedback">
+              <div *ngIf="f.equipe.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="critique" class="form-label">Pensée critique
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.critique.errors }" class="form-control"
+              id="critique" formControlName="critique" />
+            <div *ngIf="submitted && f.critique.errors" class="invalid-feedback">
+              <div *ngIf="f.critique.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="initiative" class="form-label">sens de l'initiative
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.initiative.errors }" class="form-control"
+              id="initiative" formControlName="initiative" />
+            <div *ngIf="submitted && f.initiative.errors" class="invalid-feedback">
+              <div *ngIf="f.initiative.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="resilience" class="form-label">resilience
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.resilience.errors }" class="form-control"
+              id="resilience" formControlName="resilience" />
+            <div *ngIf="submitted && f.resilience.errors" class="invalid-feedback">
+              <div *ngIf="f.resilience.errors.required">champ requis</div>
+            </div>
+          </div>
+          <div class="col-md-12  my-3">
+            <div class="d-flex flex-row-reverse p-3 border bg-default   bg-opacity-100  rounded-3">
+              <div><span class=" badge bg-primary">
+                {{ 
+                  editForm.value.resilience+
+                  editForm.value.initiative+
+                  editForm.value.critique+
+                  editForm.value.equipe}}
+              </span></div>
+              <div>Professionalisme</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="col-md-6">
+            <label for="decision" class="form-label">jugement et prise de décision
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.decision.errors }" class="form-control"
+              id="decision" formControlName="decision" />
+            <div *ngIf="submitted && f.decision.errors" class="invalid-feedback">
+              <div *ngIf="f.decision.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="gestion_equipe" class="form-label">gestion d'equipe
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.gestionEquipe.errors }"
+              class="form-control" id="gestion_equipe" formControlName="gestionEquipe" />
+            <div *ngIf="submitted && f.gestionEquipe.errors" class="invalid-feedback">
+              <div *ngIf="f.gestionEquipe.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="coordination" class="form-label">coordination
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.coordination.errors }" class="form-control"
+              id="coordination" formControlName="coordination" />
+            <div *ngIf="submitted && f.coordination.errors" class="invalid-feedback">
+              <div *ngIf="f.coordination.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="emotions" class="form-label">Maitrise des emotions
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.emotions.errors }" class="form-control"
+              id="emotions" formControlName="emotions" />
+            <div *ngIf="submitted && f.emotions.errors" class="invalid-feedback">
+              <div *ngIf="f.emotions.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-12  my-3">
+            <div class="d-flex flex-row-reverse p-3 border bg-default   bg-opacity-100  rounded-3">
+              <div><span class=" badge bg-primary">
+                {{ 
+                  editForm.value.emotions+
+                  editForm.value.coordination+
+                  editForm.value.gestionEquipe+
+                  editForm.value.decision}}
+              </span></div>
+              <div>Responsabilite</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="col-md-6">
+            <label for="morale" class="form-label">Valeurs morales
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.morale.errors }" class="form-control"
+              id="morale" formControlName="morale" />
+            <div *ngIf="submitted && f.morale.errors" class="invalid-feedback">
+              <div *ngIf="f.morale.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="normes" class="form-label">respect de normes
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.normes.errors }" class="form-control"
+              id="normes" formControlName="normes" />
+            <div *ngIf="submitted && f.normes.errors" class="invalid-feedback">
+              <div *ngIf="f.normes.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="exigence" class="form-label">respect des exigences
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.exigence.errors }" class="form-control"
+              id="exigence" formControlName="exigence" />
+            <div *ngIf="submitted && f.exigence.errors" class="invalid-feedback">
+              <div *ngIf="f.exigence.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="procedure" class="form-label">respect des procedures
+              <span class="text-danger">*</span></label>
+            <input type="number" [ngClass]="{ 'is-invalid': submitted && f.procedure.errors }" class="form-control"
+              id="procedure" formControlName="procedure" />
+            <div *ngIf="submitted && f.procedure.errors" class="invalid-feedback">
+              <div *ngIf="f.procedure.errors.required">champ requis</div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <div class="d-flex flex-row-reverse p-3 border bg-default   bg-opacity-100  rounded-3">
+              <div><span class=" badge bg-primary">{{ 
+                editForm.value.procedure+
+                editForm.value.exigence+
+                editForm.value.normes+
+                editForm.value.morale}}</span></div>
+              <div>Ethique</div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-default btn-sm float-end" (click)="save()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{
+    "User": {
+        "title": "Gestion des utilisateurs",
+        "list": "Liste des utilisateurs",
+        "add": "Ajouter un nouvel utilisateur",
+        "lastName": "Nom de Famille",
+        "firstName" : "Prénom", 
+        "phone" : "Téléphone",
+        "email": "Email",
+        "adress": "Adresse ou Localisation", 
+        "network": "Réseaux sociaux",
+        "skype": "Identifiant Skype",
+        "whatsapp": "Numéro Whatsapp", 
+        "teamviewer":"Identifiant Teamviewer",
+        "user": "Utilisateur",
+        "users": "Utilisateurs"
+    }
+}

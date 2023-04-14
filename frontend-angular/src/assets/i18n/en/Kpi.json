@@ -1,0 +1,37 @@
+{
+
+    "Kpi": {
+        "title": "KPIs Management", 
+        "name" : "KPI Name",
+        "main":"Menu",
+        "name_required": "KPI name is required",
+        "name_Required_3":"KPI name must be at least 3 characters",
+        "unity": "KPI Unity",
+        "unity_required": "KPI Unity is required",
+        "select_unity":"Select the unit",
+        "target" : "KPI Target",
+        "target_required" : "KPI Target is required",
+        "value": "KPI Value",
+        "value_required":"KPI value is required",
+        "description" : "KPI Description", 
+        "description_required": "KPI Description is required",
+        "description_required_15": "KPI description must be at least 15 characters",
+        "list" : "KPIs List",
+        "kpi":"KPI",
+        "kpis": "KPIs",
+        "indicator" : "Key performance indicators", 
+        "number": "Number",
+        "percent": "Percentage",
+        "budget": "Budget",
+        "time": "Temps",
+        "select_kpi":"Select the KPI", 
+
+        "add": "Determine a KPI",
+        "list_proc": "Process KPIs List", 
+        "list_obj": "Objective KPIs List", 
+        "monitoring": "KPI Monitoring",
+        "type": "KPI type", 
+        "type_required": "KPI type is required"
+    }
+
+}

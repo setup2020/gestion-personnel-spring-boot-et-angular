@@ -1,0 +1,18 @@
+{
+    "User": {
+        "title": "Users Management",
+        "list": "Users list",
+        "add": "Add a new user",
+        "lastName": "Last name",
+        "firstName" : "First name", 
+        "phone" : "Phone",
+        "email": "Email",
+        "adress": "Address or Location",
+        "network": "Social networks",
+        "skype": "Skype ID",
+        "whatsapp": "Whatsapp number", 
+        "teamviewer":"Teamviewer ID",
+        "user": "User",
+        "users": "Users"
+    }
+}

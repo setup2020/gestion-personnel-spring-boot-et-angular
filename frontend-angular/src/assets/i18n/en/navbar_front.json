@@ -1,0 +1,19 @@
+{
+    "navbar_front": {
+        "dashboard": "Dasboard",
+        "policy": "Policy",
+        "kpi": "KPI Management",
+        "process": "Process Management",
+        "task": "Task Management",
+        "incident": "Incident Management",
+        "document": "Document Management",
+        "claim": "Claim Management",
+        "objective": "Objectives",
+        "appoiment": "Appoiments",
+        "challenge": "Appoiments",
+        "parties": "interested parties management",
+        "suggestion": "Suggestions management",
+        "main": "Main",
+        "requirement": "Requirement management"
+    }
+}

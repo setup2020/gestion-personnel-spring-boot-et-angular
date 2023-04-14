@@ -1,0 +1,23 @@
+{
+    "Incident" : {
+        "title": "Gestion des Incidents",
+        "incident": "Incident",
+        "incidents": "Incidents",
+        "add": "Créer un incident",
+        "my": "Mes Incidents",
+        "list":"Liste des incidents",
+        "archived": "Incidents archivés", 
+        "valid": "Incident à valider", 
+        "deal_with": "Incident à traiter",
+        "name": "Nom de l'incident",
+        "main":"Menu",
+        "impact": "Impact de l'incident",
+        "impact_required":"Impact de l'incident est exigé",
+        "reporter": "Rapporter de l'incident",
+        "reporter_required": "Rapporter de l'incident est exigé",
+        "owner" : "Responsable de l'incident",
+        "deadline": "Date limite de traitement de l'incident",
+        "desciprtion" : "Description de l'incident"
+    
+       }
+}

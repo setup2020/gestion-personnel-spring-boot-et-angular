@@ -1,0 +1,14 @@
+{
+    "Objective": {
+        "title": "Objectives Management",
+        "add": "Set an objective", 
+        "list": "Objectives List",
+        "monitoring": "Objectives Monitoring",
+        "name": "Objective name",
+        "main":"Menu",
+        "desciprtion": "Objectives description"
+    
+    
+         }
+
+}

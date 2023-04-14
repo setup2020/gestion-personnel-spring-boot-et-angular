@@ -1,0 +1,37 @@
+{
+    
+
+    "Process": {
+        "title": "Gestion des Processus", 
+        "list": "Liste des Processus",
+        "add": "Enregistrer un processus", 
+        "information": "Information générale", 
+        "permission": "Autorisations", 
+        "type": "Typ de processus",
+        "process": "Processus",
+        "processes": "Processus",
+        "category": "Catégorie du processus",
+        "group": "Groupe du processus",
+        "name": "Nom du processus",
+        "main":"Menu",
+        "department": "Département´du responsable du procesus", 
+        "owner": "Responsable du procesus", 
+        "version": "Version du processus", 
+        "ref": "Reference du processus",
+        "signed": "Signataire",
+        "date_valid": "Valide à partir de:",
+        "goal": "Objectfs du processus",
+        "description": "Description du processus", 
+        "participant": "Liste des participants du processus",
+        "animator": "Liste des animateurs du processus",
+        "trigger": "Liste des éléments déclencheurs du processus",
+        "parent": "Processus parent",
+        "access_denied": "Accès refusé",
+        "method":"Méthode du processus",
+        "management": "Processus de management",
+        "operation": "Processus de réalisation",
+        "support":"Processus support"
+
+
+    }
+}

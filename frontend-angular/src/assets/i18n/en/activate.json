@@ -1,0 +1,48 @@
+{
+    "activate": {
+        "HOME": {
+            "TITLE": "c'est un test !",
+            "SELECT": "Changer la langue"
+        },
+        "input": {
+            "title": "ENTREES"
+        },
+        "outputs": {
+            "title": "SORTIES"
+        },
+        "resources": {
+            "title": "RESSOURCES"
+        },
+        "standards": {
+            "title": "NORMES"
+        },
+        "performance": {
+            "title": "PEFORMANCES"
+        },
+        "management_users": {
+            "title": "GESTIONS DES UTILISATEURS",
+            "roles": "ROLES",
+            "privileges": "PRIVILEGES"
+        },
+        "departments": {
+            "title": "DEPARTEMENTS"
+        },
+        "teams": {
+            "title": "GROUPES"
+        },
+        "users": {
+            "title": "UTILISATEURS",
+            "list": "LISTES DES UTILISATEURS"
+        },
+        "supervisors": {
+            "title": "SUPERVISEURRS"
+        },
+        "procedures": {
+            "title": "LISTE PROCEDURES",
+            "management_procedures": "GESTIONS PROCEDURE"
+        },
+        "axis_policies": {
+            "title": "AXES POLITIQUES"
+        }
+    }
+}

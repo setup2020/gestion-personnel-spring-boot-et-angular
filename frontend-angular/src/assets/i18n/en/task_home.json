@@ -1,0 +1,14 @@
+{
+    "task_home": {
+        "page_title": "Menu",
+        "title": "Menu task",
+        "create": "Create task",
+        "my_task": "My tasks",
+        "task_valid": "Task valid",
+        "task_team": "Tasks teams",
+        "task_claim": "Tasks reclamations",
+        "task_incident": "Tasks incidents",
+        "task_suggestion": "Tasks suggestions",
+        "task_archive": "Tasks archived"
+    }
+}

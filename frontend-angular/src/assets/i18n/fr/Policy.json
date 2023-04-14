@@ -1,0 +1,14 @@
+{
+    "Policy": {
+        "title": "Gestion de la Politique",
+        "policy": " Politique",
+        "type" : "Type",
+        "select_type": "Selectionner le type",
+        "sous_type" : "Sous Type", 
+        "select_stype": "Selectionner le sous type", 
+        "name": "Nom de l'axe politique",
+        "main":"Menu",
+        "description": "Description de l'axe politique",
+        "select_policy": "Sélectionner l'axe politique"
+     }
+}

@@ -1,0 +1,15 @@
+{
+
+    "Resource": {
+        "title": "Resources Management",
+        "add": "Add a resource",
+        "name": "Resource name",
+        "main":"Menu",
+        "description": "Resource description",
+        "resource": "Resource",
+        "list": "Resources List",
+        "resources": "resources"
+        
+    }
+
+}

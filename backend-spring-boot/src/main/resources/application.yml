@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: "MSUAA"
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://172.21.0.2:5432/imv_ms_uaa
+    username: user
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+  liquibase:
+    change-log: classpath:/db/changelog/master.xml
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 8080
+

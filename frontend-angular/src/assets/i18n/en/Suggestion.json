@@ -1,0 +1,21 @@
+{
+    "Suggestion" : {
+        "title": "Suggestion Management",
+        "suggestion": "Suggestion",
+        "suggestions": "Suggestions",
+        "add": "Propose a Suggestion",
+        "my": "My Suggestions",
+        "archived": "Archived Suggestions", 
+        "valid": "Suggestion to validate", 
+        "deal_with": "Suggestion to deal with",
+        "name": "Suggestion name",
+        "main":"Menu",
+        "reporter": "Suggestion reporter",
+        "owner" : "Suggestion Owner",
+        "deadline": "Suggestion deadline",
+        "desciprtion" : "Suggestion description",
+        "benefit": "benefits List",
+        "damage": "Damages List"
+    
+       }
+}

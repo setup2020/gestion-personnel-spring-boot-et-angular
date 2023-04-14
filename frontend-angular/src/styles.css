@@ -1,0 +1,15 @@
+
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+ 
+@import '~@ng-select/ng-select/themes/default.theme.css';
+
+
+#toolbar {
+    align-items: center;
+    background-color: var(--viewer-pdf-toolbar-background-color);
+    color: white;
+    display: non !important;
+    height: var(--viewer-pdf-toolbar-height);
+    padding: 0 16px;
+}

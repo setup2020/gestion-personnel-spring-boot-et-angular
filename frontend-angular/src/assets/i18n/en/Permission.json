@@ -1,0 +1,9 @@
+{
+
+    "Permission": {
+        "title": "Permission Management",
+        "list": "Permissions List",
+        "permission":"Permissions",
+        "main":"Menu"
+    }
+}

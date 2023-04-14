@@ -1,0 +1,13 @@
+{
+
+    "Role": {
+        "title": "Role Management",
+        "employee": "EMPLOYEE",
+        "supervisor": "TEAM CHEF",
+        "manager": "MANAGER",
+        "top": "TOP MANAGER",
+        "role" : "Role",
+        "select_role": "Select the role",
+        "roles": "Roles"
+    }
+}

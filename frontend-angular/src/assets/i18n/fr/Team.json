@@ -1,0 +1,13 @@
+{
+
+    "Team": {
+        "title": "Gestion des Équipes",
+        "list": "Liste des équipes",
+        "Name": "Nom de l'équipe",
+        "main":"Menu",
+        "description": "Description de l'équipe",
+        "select_team": "Sélectionner l'équipe",
+        "team": "Équipes",
+        "teams": "Équipes"
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "app": "IMV PLATEFORM",
+    "HOME": {
+        "TITLE": "Hello Angular with ngx-translate!",
+        "SELECT": "Change language"
+    },
+    "input": {
+        "title": "Inputs Management",
+        "Documents inputs": "Inputs Management",
+        "Name": "Input Name",
+        "Description": "Description"
+    },
+    "outputs": {
+        "title": "Outputs Managment",
+        "Documents outputs": "Outputs Managment",
+        "Name": "Output name",
+        "Description": "Description"
+    },
+    "resources": {
+        "title": "Resources Management",
+        "Name": "Resource Name",
+        "Description": "Description"
+    },
+    "standards": {
+        "title": "Standards",
+        "Standards": "Standards list",
+        "Name": "Standard name",
+        "Description": "Description"
+    },
+    "performance": {
+        "title": "KPI Management",
+        "List Performances": "KPI Management",
+        "Name": "KPI Name",
+        "Unity": "KPI Unity",
+        "NUMBER": "Number",
+        "PERCENT": "Percentage",
+        "COUT": "Budjet",
+        "TEMPS": "Date"
+    },
+    "management_users": {
+        "title": "Users Management"
+    },
+    "roles": {
+        "title": "Roles",
+        "EMPLOYEE": "EMPLOYEE",
+        "SUPERVISOR": "TEAM CHEF",
+        "MANAGER": "MANAGER",
+        "TOP MANAGER": "TOP MANAGER"
+    },
+    "privileges": {
+        "title": "Privilege Management",
+        "Role": "Role",
+        "Privileges List": "Privileges List"
+    },
+    "departments": {
+        "title": "Departements Management",
+        "Departement List": "Departement List",
+        "Name": "Department Name",
+        "Description": "Description"
+    },
+    "teams": {
+        "title": "Teams Management",
+        "Teams List": "Team List",
+        "Name": "Team Name",
+        "Description": "Description"
+    },
+    "users": {
+        "title": "Users",
+        "list": "USER MANAGEMENT"
+    },
+    "supervisors": {
+        "title": "Supervisors Management",
+        "Supervisors List": "Supervisors List",
+        "Role": "Role ",
+        "Department": "Department Name",
+        "Name": "Supervisor name",
+        "Description": "Description"
+    },
+    "procedures": {
+        "title": "Procedures List",
+        "management_procedures": "Procedures Management"
+    },
+    "axis_policies": {
+        "title": "Policy Management",
+        "Name": "Name of policy axis",
+        "Type": "Requirements type",
+        "Description": "Description"
+    },
+    "Create User": {
+        "title": "Create User",
+        "Last name": "Last name",
+        "First name": "First name",
+        "Phone": "Phone",
+        "Email": "Email",
+        "Adress": "Adress",
+        "Role": "Role",
+        "NETWORK": "SOCIAL NETWORKS",
+        "Skype ID": "Skype ID",
+        "Facebook": "Facebook",
+        "Linkedin": "Linkedin"
+    }
+}

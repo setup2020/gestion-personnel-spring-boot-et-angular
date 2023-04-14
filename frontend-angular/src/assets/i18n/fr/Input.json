@@ -1,0 +1,12 @@
+{
+    "Input": {
+        "title": "Gestion des Éléments d'Éntrée",
+        "add": "Ajouter un élément d'éntrée",  
+        "name": "Nom de l'élément d'entrée",
+        "main":"Menu",
+        "description": "Description de l'élément d'entrée",
+        "list":"Liste des éléments d'entrée", 
+        "input": "Élément d'entrée",
+        "inputs": "Éléments d'entrée"
+    }
+}

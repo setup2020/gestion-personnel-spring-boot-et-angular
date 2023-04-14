@@ -1,0 +1,12 @@
+{
+    "Department": {
+        "title": "Departments Management",
+        "list": "Departments List ",
+        "main":"Menu",
+        "name": "Department name",
+        "description": "Department description",
+        "select_dep": "Select the department",
+        "department":"Department",
+        "departments": "Departments"
+    }
+}

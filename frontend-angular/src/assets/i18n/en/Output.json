@@ -1,0 +1,13 @@
+{
+    "Output": {
+        "title": "Outputs Elements Managment",
+        "add": "Add an Output Element",
+        "name": "Output Element name",
+        "main":"Menu",
+        "description": "Output element description",
+        "list": "Outputs Element List ",
+        "output": "Output Element",
+        "outputs": "Output Elements"
+    }
+
+}

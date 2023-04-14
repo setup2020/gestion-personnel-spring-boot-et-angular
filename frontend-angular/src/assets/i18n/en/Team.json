@@ -1,0 +1,12 @@
+{
+    "Team": {
+        "title": "Teams Management",
+        "list": "Teams List",
+        "name": "Team name",
+        "main":"Menu",
+        "description": "Team description",
+        "select_team": "Select the team",
+        "team": "Team",
+        "teams": "Teams"
+    }
+}

@@ -1,0 +1,14 @@
+{
+
+    "Standard": {
+        "title": "Standards Management", 
+        "add" : "Add a standard", 
+        "name" : "Standard name", 
+        "main":"Menu",
+        "description" : "Standard description", 
+        "list" : "Standards List",
+        "standard": "Standard",
+        "standards": "Standards"
+    }
+
+}

@@ -1,0 +1,48 @@
+{
+    "activate": {
+        "HOME": {
+            "TITLE": "Hello Angular with ngx-translate!",
+            "SELECT": "Change language"
+        },
+        "input": {
+            "title": "INPUTS"
+        },
+        "outputs": {
+            "title": "OUTPUTS"
+        },
+        "resources": {
+            "title": "RESOURCES"
+        },
+        "standards": {
+            "title": "STANDARDS"
+        },
+        "performance": {
+            "title": "PEFORMANCES"
+        },
+        "management_users": {
+            "title": "MANAGEMENT USERS",
+            "roles": "ROLES",
+            "privileges": "PRIVILEGES"
+        },
+        "departments": {
+            "title": "DEPARTMENTS"
+        },
+        "teams": {
+            "title": "TEAMS"
+        },
+        "users": {
+            "title": "USERS",
+            "list": "LIST USERS"
+        },
+        "supervisors": {
+            "title": "SUPERVISORS"
+        },
+        "procedures": {
+            "title": "LIST PROCEDURES",
+            "management_procedures": "MANAGEMENT PROCEDURE"
+        },
+        "axis_policies": {
+            "title": "AXIS POLITICIES"
+        }
+    }
+}

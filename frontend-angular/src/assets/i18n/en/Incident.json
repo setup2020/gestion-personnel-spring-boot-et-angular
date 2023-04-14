@@ -1,0 +1,23 @@
+{
+    "Incident" : {
+        "title": "Incident Management",
+        "incident": "Incident",
+        "incidents": "Incidents",
+        "add": "Create an incident",
+        "my": "My Incidents",
+        "list":"Incidents list",
+        "archived": "Archived incidents", 
+        "valid": "Incident to validate", 
+        "deal_with": "Incident to deal with",
+        "name": "Incident name",
+        "main":"Menu",
+        "impact": "Incident impact",
+        "impact_required":"Incident impact is required",
+        "reporter": "Incident reporter",
+        "reporter_required": "Incident reporter is required",
+        "owner" : "Incident Owner",
+        "deadline": "incident deadline",
+        "desciprtion" : "Incident description"
+    
+       }
+}

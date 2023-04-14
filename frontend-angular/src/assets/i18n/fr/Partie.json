@@ -1,0 +1,29 @@
+{"Partie":{
+    "title": "Gestion des parties intéressées",
+    "add":"Identifier une partie intéressée",
+    "list_partner":"Liste des partenaires",
+    "list_shareholder":"Liste des actionnaires",
+    "list_supplier":"Liste des founisseurs",
+    "list_customer": "Liste des clients",
+    "monitoring":"Surveillance des parties intéressées",
+    "category":"Catégorie des parties intéressées",
+    "sub_category": "Sous catégorie",
+    "select_category":"Sélectionner la catégorie",
+    "select_sub_category":"Sélectionner la Sous catégorie",
+    "sub_category_typ": "Type de sous catégorie",
+    "select_typ_sub_category": "Sélectionner le type de sous catégorie",
+    "name":"Nom de la partie intéressée",
+    "main":"Menu",
+    "description":"Description de la partie intéressée",
+    "influence": "Influencede la partie intéressée",
+    "localisation": "Localisation de la partie intéressée",
+    "spoc_name":"Nom du point de contact unique ",
+    "spoc_email":"Email du point de contact unique",
+    "spoc_phone":"Téléphone du Point de contact unique",
+    "need": "Besoins et Attentes du partie intéressée",
+    "partie":"Partie intéressée",
+    "parties":"Parties intéressées"
+
+
+   }
+}

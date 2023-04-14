@@ -1,0 +1,16 @@
+{
+
+    "Standard": {
+        "title": "Gestion des normes", 
+        "add" : "Ajouter une norme", 
+        "name" : " Nom de la norme", 
+        "main":"Menu",
+        "description" : "Description de la norme", 
+        "list" : "Liste des normes",
+        "standard": "Norme",
+        "standards": "Normes"
+
+    }
+
+
+}

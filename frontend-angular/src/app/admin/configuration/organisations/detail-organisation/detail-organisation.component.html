@@ -1,0 +1,202 @@
+<div class="page-header mt-5">
+  <h1 class="page-title">Detail organisations</h1>
+  <div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Detail Organisation
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class=" card card-body">
+      <ng-container *ngIf="org">
+        <p>Nom: {{ org.libelle }}</p>
+        <p>Type: {{ org.typeOrganisationDTO?.libelle }}</p>
+      </ng-container>
+    </div>
+    <div class="card">
+      <div class="card-header">Ajouter un utilisateur</div>
+      <div class="card-body">
+        <form class="form-row" [formGroup]="editUserForm">
+          <div class="col-md-5">
+            <label for="nameLevel">Selectionnez un user</label>
+            <select class="form-select" formControlName="user">
+              <option selected>Seletionnez un user</option>
+              <option [ngValue]="t" *ngFor="let t of users">
+                {{ t.lastName }}
+              </option>
+            </select>
+          </div>
+          <div class="col-md-5">
+            <label for="nameLevel">Selectionnez un poste</label>
+            <select class="form-select" formControlName="poste">
+              <option selected>Selectionnez un poste</option>
+              <option [ngValue]="t" *ngFor="let t of postes">
+                {{ t.libelle }}
+              </option>
+            </select>
+          </div>
+          <div class="col-md-2 pt-1">
+            
+            <button class="btn btn-default mt-5" (click)="addLine()">add</button>
+          </div>
+          <ng-container *ngIf="lines.controls.length">
+            <div class="col-12" >
+              <table class="table">
+                <thead>
+                  <tr>
+                  
+                    <th scope="col">Nom</th>
+                    <th scope="col">Poste</th>
+                    <th scope="col">Chef</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of lines.controls;let i = index">
+                    
+                    <td>{{p.value.user.userDTO.lastName}}</td>
+                    <td>{{p.value.user.posteDTO.libelle}}</td>
+                    <th >{{p.value.user.posteDTO.responsable?"Oui":"Non"}} </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
+            <div class="col-12 mt-4">
+              <button class="btn btn-sm btn-default float-end" (click)="saveUser()">
+                Save
+              </button>
+            </div>
+          </ng-container>
+
+        
+        </form>
+     
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">liste des utilisateurs de l'organisation</div>
+
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <th scope="col">Nom</th>
+                  <th scope="col">Poste</th>
+                  <th scope="col">Chef</th>
+              </thead>
+              <tbody>
+
+                <tr *ngFor="let l of lineUserPoste">
+                  <td> {{l.userDTO?.lastName}}</td>
+                  <td> {{l.posteDTO?.libelle}}</td>
+                  <td>
+                    <span class="badge " [ngClass]="l.posteDTO?.responsable?'bg-success':'bg-danger'">
+                      {{l.posteDTO?.responsable?"Oui":"Non"}}
+                    </span>
+                    
+                   </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-container *ngIf="organisations.length">
+      <h5>Liste Sous Organisations</h5>
+    <div class="row">
+      <div class="col-4" *ngFor="let r of organisations">
+        <div class="card p-5" >
+          {{ r.libelle }}
+          <div class="text-muted text-italic">({{r.typeOrganisationDTO!.libelle}})</div>
+        </div>
+      </div>
+    </div>
+    </ng-container>
+
+    
+  </div>
+  <div class="col-md-6">
+
+    <div class="card">
+      <div class="card-header">Ajouter un poste</div>
+
+      <div class="card-body">
+        <form class="form-row" [formGroup]="editForm">
+          <div class="form-group col-12">
+            <label>Liblle du poste</label>
+            <input type="text" class="form-control" formControlName="libelle" />
+          </div>
+          <div class="form-group col-12">
+            <label>Liblle du poste En anglais</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="libelleEn"
+            />
+          </div>
+
+          <div class="col-md-12">
+            <label for="nameLevel">Responsable ?</label>
+            <select class="form-select" formControlName="responsable">
+              <option [value]="false">Non</option>
+              <option [value]="true">
+                Oui
+              </option>
+            </select>
+          </div>
+          <div class="col-12 mt-5">
+            <button class="btn btn-sm btn-default" (click)="save()">
+              Save
+            </button>
+          </div>
+        </form>
+       
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">Liste des postes</div>
+
+      <div class="card-body">
+     
+        <div class="row">
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Libelle</th>
+                  <th scope="col">Libelle Anglais</th>
+                  <th scope="col">Responsable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let p of postes">
+                  <th scope="row">{{ p.id }}</th>
+                  <td>{{ p.libelle }}</td>
+                  <td>{{ p.libelleEn }}</td>
+                  <td>
+                    <span class="badge " [ngClass]="p.responsable?'bg-success':'bg-danger'">
+                      {{ p.responsable?"Oui":"Non" }}
+                    </span>
+                   </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

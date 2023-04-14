@@ -1,0 +1,12 @@
+{
+    "Input": {
+        "title": "Input Elements Management",
+        "add": "Add an input element",
+        "name": "Input Element Name",
+        "main":"Menu",
+        "description" : "Input Element Description", 
+        "list": "Inputs Element List" ,
+        "input" : "Input Element", 
+        "inputs" : "Input Elements"
+    }
+}

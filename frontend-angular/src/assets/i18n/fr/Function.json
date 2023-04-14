@@ -1,0 +1,11 @@
+{
+    "Function": {
+        "title": "Gestion des fonctions",
+        "list": "Liste des fonctions",
+        "name": "Nom de la fonction",
+        "main":"Menu",
+        "description": "Description de la fonction",
+        "function":"Fonction",
+        "functions":"Fonctions"
+    }
+}

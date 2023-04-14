@@ -1,0 +1,21 @@
+{
+    "Issue":{
+        "title": "Issues Management",
+        "add": "Determine  the issue",
+        "list_int": "Internal issues list",
+        "list_ext": "External issues list",
+        "monitoring": " Issues Monitoring",
+        "category": "Issue caterogry",
+        "name": "Issue name", 
+        "main":"Menu",
+        "description": "Issue Description",
+        "factor_pos": "Positves Factors",
+        "factor_neg": "Negatives Factors",
+        "condition":"Issue Conditions", 
+        "opportunity": "Issue opportunity",
+        "issue": "Issue",
+        "issues": "Issues"
+
+
+    }
+}

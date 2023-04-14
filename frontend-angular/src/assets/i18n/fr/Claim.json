@@ -1,0 +1,19 @@
+{
+    "Claim" : {
+        "title": "Gestion des Réclamations",
+        "claim": "Réclamation",
+        "claims": "Réclamations",
+        "add": "Enregistrer une réclamation",
+        "my": "Mes Réclamations",
+        "archived": "Réclamations archivées", 
+        "valid": "Réclamations à valider", 
+        "deal_with": "Réclamations à traiter",
+        "name": "Nom de la réclamation",
+        "main":"Menu",
+        "reporter": "Rapporteur de la réclamation",
+        "owner" : "Responsable de la réclamation",
+        "deadline": "Date limite de traitement de la réclamation",
+        "desciprtion" : "Description de la Réclamation"   
+    
+       }
+}

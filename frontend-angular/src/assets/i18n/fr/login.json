@@ -1,0 +1,10 @@
+{
+    "login": {
+        "title": "Se connecter",
+        "login": "Se connecter",
+        "forget_pwd": "Mot de passe oublié",
+        "email": "Email",
+        "pwd": "Mot de passe",
+        "check_out": "Vérifiez-moi"
+    }
+}

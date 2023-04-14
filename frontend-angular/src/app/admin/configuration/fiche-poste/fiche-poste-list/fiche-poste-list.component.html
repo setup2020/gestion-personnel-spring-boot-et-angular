@@ -1,0 +1,60 @@
+<div class="page-header mt-5">
+    <h1 class="page-title">Fiche de poste</h1>
+    <div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="javascript:void(0)">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">fiche de poste</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="card border p-0 shadow-none">
+
+    <div class="card-header p-3">
+        <div class="ms-auto">
+            <div class="dropdown show">
+                <a class="new option-dots" href="JavaScript:void(0);" data-bs-toggle="dropdown">
+                    <span class=""><i class="fe fe-more-vertical"></i></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" routerLink="/config/fiche-poste-add">New File post</a>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table border text-nowrap text-md-nowrap mb-0">
+                <thead class="table-primary">
+                    <tr>
+                        <th>ID</th>
+                        <th>nom</th>
+                       
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngIf="!fichePostes.length" ><td class=" text-center" colspan="3">Aucun resultat </td></tr>
+                    <tr *ngFor="let f of fichePostes">
+                        <td>{{f.id}}</td>
+                        <td>{{f.nom}}</td>
+                      
+                        <td>
+                            <div class="dropdown show">
+                                <button class="btn sales-icon text-primary mx-2 brround bg-primary-transparent p-2"><i class="fe fe-edit-2"></i></button>
+                                <button class="btn sales-icon text-danger mx-2 brround bg-danger-transparent p-2" (click)="remove(f)"><i class="text-danger fe fe-trash-2"></i></button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+</div>

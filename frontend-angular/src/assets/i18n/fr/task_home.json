@@ -1,0 +1,14 @@
+{
+    "task_home": {
+        "page_title": "Menu",
+        "title": "Menu tâche",
+        "create": "Créer une tâche",
+        "my_task": "Mes tâches",
+        "task_valid": "Tâches à valider",
+        "task_team": "Tâches d'equipes",
+        "task_claim": "Tâches reclamations",
+        "task_incident": "Tâches incidents",
+        "task_suggestion": "Tâches suggestions",
+        "task_archive": "Tâches archiver"
+    }
+}
